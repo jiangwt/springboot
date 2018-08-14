@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.Environment;
@@ -15,6 +16,7 @@ import org.springframework.core.env.Environment;
  *
  */
 @SpringBootApplication
+@ServletComponentScan
 public class App {
 	
 	@Bean
@@ -39,7 +41,7 @@ public class App {
 		
 		System.out.println(context.getEnvironment().getProperty("springboot.name"));
 		
-		context.close();
+//		context.close();
 	}
 	
 	

@@ -16,16 +16,16 @@ public class MyEnvironmentPostProcessor implements EnvironmentPostProcessor {
 			ConfigurableEnvironment environment, 
 			SpringApplication application) {
 		
-		try (InputStream input = new FileInputStream("D:/code_workspace/springboot.properties")){
-			
-			Properties source = new Properties();
-			source.load(input);
-			PropertiesPropertySource propertySource = new PropertiesPropertySource("my", source);
-			environment.getPropertySources().addLast(propertySource);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+//		try (InputStream input = new FileInputStream("D:/code_workspace/springboot.properties")){
+//			
+//			Properties source = new Properties();
+//			source.load(input);
+//			PropertiesPropertySource propertySource = new PropertiesPropertySource("my", source);
+//			environment.getPropertySources().addLast(propertySource);
+//			
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		
 	}
 

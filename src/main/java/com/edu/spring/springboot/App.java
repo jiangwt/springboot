@@ -29,12 +29,7 @@ public class App {
 		ConfigurableApplicationContext context = SpringApplication.run
 				(App.class, args);
 		
-//		System.out.println(context.getEnvironment().getProperty("local.ip"));
-//		context.getBean(Runnable.class).run();
-//		System.out.println(context.getBean(User.class));
-//		context.getBean(UserConfigs.class).show();
-//		context.getBean(JdbcConfig.class).show();
-		
+
 		//yml配置文件读取
 		System.out.println("yml config read");
 		System.out.println(context.getEnvironment().getProperty("jdbc.username"));
